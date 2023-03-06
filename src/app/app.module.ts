@@ -6,19 +6,26 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { Routes, RouterModule } from '@angular/router';
+import { LandingPageComponent } from './Components/landing-page/landing-page.component';
+import { HomeSectionComponent } from './Components/home-section/home-section.component';
+import {ButtonModule} from 'primeng/button';
+import {StyleClassModule} from 'primeng/styleclass';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    LandingPageComponent,
+    HomeSectionComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     RouterModule,
-    AppRoutingModule
-    
+    AppRoutingModule,
+    ButtonModule,
+    StyleClassModule
   ],
   providers: [],
   bootstrap: [AppComponent]

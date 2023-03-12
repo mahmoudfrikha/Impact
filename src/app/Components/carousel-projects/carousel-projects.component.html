@@ -1,0 +1,18 @@
+
+<div class="project-section" >
+    <h2>Projects</h2>
+    <p-carousel [value]="projects" [numVisible]="3" [circular]="true" [responsiveOptions]="responsiveOptions">
+        <ng-template let-project pTemplate="item">
+          <div class="project">
+            <p-card>
+              <img src="{{project.image}}" alt="{{project.title}}" />
+              <div class="project-body">
+                <h5>{{project.title}}</h5>
+                <p>{{project.description}}</p>
+                <button pButton label="Donate Now"></button>
+              </div>
+            </p-card>
+          </div>
+        </ng-template>
+      </p-carousel>
+  </div>

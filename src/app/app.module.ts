@@ -10,14 +10,19 @@ import { LandingPageComponent } from './Components/landing-page/landing-page.com
 import { HomeSectionComponent } from './Components/home-section/home-section.component';
 import {ButtonModule} from 'primeng/button';
 import {StyleClassModule} from 'primeng/styleclass';
-
+import {CardModule} from 'primeng/card';
+import { ProjectCardComponent } from './Components/project-card/project-card.component';
+import {CarouselModule} from 'primeng/carousel';
+import { CarouselProjectsComponent } from './Components/carousel-projects/carousel-projects.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     LandingPageComponent,
-    HomeSectionComponent
+    HomeSectionComponent,
+    ProjectCardComponent,
+    CarouselProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,9 @@ import {StyleClassModule} from 'primeng/styleclass';
     RouterModule,
     AppRoutingModule,
     ButtonModule,
-    StyleClassModule
+    StyleClassModule,
+    CardModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
